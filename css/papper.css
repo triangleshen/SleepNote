@@ -1,0 +1,120 @@
+.main_nav ul li:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 13px;
+    left:calc(50% - 48px); 
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.main_nav ul li:nth-child(2) span{
+    position: relative;
+}
+
+.content_wrap{
+    padding-top: 80px;
+}
+
+/* ----------banner---------- */
+.banner{
+    position: relative;
+    padding-bottom: 0px;
+}
+
+.banner .pic{
+    width: 530px;
+    height: 530px;
+    position: relative;
+    left: 18%;
+    bottom: 80px;
+    overflow: hidden;
+}
+
+.banner .pic img{
+    border-radius: 1% 0% 0% 0%;
+}
+
+.banner_card{
+    max-width: 500px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom:0%;
+    right:5%;
+    background-color: #fff;
+    border: 5px solid #73A1F1;
+    border-radius: 20px;
+    box-shadow: 20px 10px 0px #D9E7FF;
+    transition: .2s ease-in-out;
+}
+
+.banner_card:hover{
+    bottom:0.8%;
+    right:5.1%;
+    cursor: pointer;
+    box-shadow: 23px 15px 0px #D9E7FF;
+}
+
+.banner_card h3{
+    color: #002E86;
+    padding-bottom: 15px;
+}
+
+.banner_txt{
+    margin-bottom: 10px;
+}
+
+/* ---------tags---------- */
+
+.sub_section{
+    padding: 0;
+}
+
+.list_wrap{
+    padding-top: 70px;
+    border-top: 1px solid #002E86;
+}
+
+.list_wrap .title{
+    margin-left: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border-bottom: 0;
+    background-color: #D9E7FF;
+}
+
+.list_wrap .tags ul li{
+    margin-right: 20px;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+    color:#4D79B2;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.list_wrap .tags ul li:hover{
+    cursor: pointer;
+}
+
+.list_wrap .tags ul li::before{
+    color: #4D79B2;
+    background-color: #fff;
+    border: 2px solid #73A1F1;
+}
+
+.list_wrap .tags ul li:hover::before{
+    cursor: pointer;
+    background-color: #DAE8FF;
+}
+
+/* ----------papper---------- */
+.grid_txt p{
+    letter-spacing: 0.5px;
+    -webkit-line-clamp: 2;
+}

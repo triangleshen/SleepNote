@@ -1,0 +1,74 @@
+.main_nav ul li:nth-child(2)::before{
+    display: none;
+}
+
+.main_nav ul li:nth-child(3)::before{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 50%;
+    top: 13px;
+    left:calc(50% - 48px); 
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 10px;
+}
+
+.main_nav ul li:nth-child(3) span{
+    position: relative;
+}
+
+/* ----------banner---------- */
+
+.banner_card h3{
+    padding-bottom: 15px;
+    font-size: 36px;
+    color: #002E86;
+}
+
+.banner_txt{
+    margin-bottom: 30px;
+}
+
+.banner_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_txt p{
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.banner_info a{
+    color: #fff;
+}
+
+.signUp_link{
+    padding: 13px;
+    font-size: 18px;
+    position: relative;
+}
+
+.signUp_link::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    right: 13px;
+    top: 19px;
+    position: absolute;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.signUp_link:hover{
+    padding-right:30px;
+}
+
+.signUp_link:hover.signUp_link::after{
+    opacity: 1;
+}
