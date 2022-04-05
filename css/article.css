@@ -88,7 +88,7 @@ main .content_wrap{
 }
 
 article h3{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px;
     font-size: 28px;
 }
@@ -96,11 +96,16 @@ article h3{
 article p{
     margin-bottom: 20px;
     font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 2px;
+    line-height: 35px;
+    letter-spacing: 1.5px;
 }
 
 /* ----------ref---------- */
+.title{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
 .book_row{
     padding: 40px 0px;
     display: flex;
@@ -132,6 +137,7 @@ article p{
 .book_txt > p span{
     padding-top: 8px;
     font-style: italic;
+    color: #002E86;
 }
 
 .book_txt h4{

@@ -80,6 +80,11 @@ h3 + p{
 .question{
     margin: 10px auto;
     padding: 30px;
+    border-bottom: 1px solid #002E86;
+}
+
+.question:first-child{
+    border-top: 1px solid #002E86;
 }
 
 .question h4{
@@ -106,7 +111,7 @@ label{
     border-radius: 10px;
     background-color: #f1f1f1;
     color: #002E86;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 label:hover{
@@ -211,6 +216,18 @@ input.btn{
     border: 3px solid #73A1F1;
     border-radius: 12px;
     box-shadow: 23px 13px 0px #D9E7FF;
+}
+
+.q_card::after{
+    content: ' ';
+    width: 150px;
+    height: 114px;
+    position: absolute;
+    top: 210px;
+    right: -60px;
+    background-image: url(../pic/topic_br.svg);
+    background-repeat: no-repeat;
+    background-size:50% 50%;
 }
 
 .q_card_content{
