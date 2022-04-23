@@ -389,12 +389,10 @@ textarea:focus-visible{
     }
 
     /* ----------topic---------- */
-    .sub_section .pink_bg{
-        /* padding-top: 0px; */
-    }
-
     .topic_card{
-        width: 80%;
+        width: 90%;
+        padding: 30px;
+        padding-top: 40px;
     }
 
     .topic_card:first-child,.topic_card:last-child{
@@ -403,15 +401,25 @@ textarea:focus-visible{
         margin: auto;
     }
 
+    .topic_card > span{  
+        top: -60px;
+        left: -30px;
+    }
+
+    .topic_card > span::before{
+        left:20px;
+    }
+
     /* ---------papper--------- */
     .papper{
-        background-position: -90% -700px, -50% 130%, 210% 250%;
-        background-size: 95% 95%, 55% 70%, 80% 80%;
+        background-position: -90% -1200px, -50% 130%, 210% 250%;
+        background-size: 100% 100%, 55% 70%, 80% 80%;
     }
 
     .papper_link{
         margin-right: auto;
         margin-left:auto;
+        margin-bottom: 50px;
     }
     form{
         margin-left: 0px;

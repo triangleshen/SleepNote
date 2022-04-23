@@ -459,7 +459,7 @@ footer{
     right: 0px;
     background-color: #fff;
     border: 3px solid #73A1F1;
-    border-radius: 15  px;
+    border-radius: 15px;
     overflow: hidden;
     box-shadow: 8px 13px 0px #D9E7FF;
     transition: .3s;
@@ -754,13 +754,16 @@ footer{
     }
 
     /* ---------grid---------- */
-
     .grid_card{
         width: 80%;
+        margin: auto;
         margin-bottom: 20px;
-        display: flex;
-        align-items: center;
         gap: 30px;
+    }
+
+    .grid_card > .pic{
+        margin-bottom: 10px;
+        height: 300px;
     }
 
     .card_content h3{
@@ -769,6 +772,12 @@ footer{
 
     /* ----------footer--------- */
     footer{
-        background-position: -1000px 0px;
+        /* padding-top: 200px; */
+        background-position: -200px -800px;
+        background-size: 230% 230%;
+    }
+
+    .footer_logo{
+        top: 330px;
     }
 }
