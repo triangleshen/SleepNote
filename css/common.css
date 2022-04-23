@@ -762,7 +762,7 @@ footer{
     }
 
     .grid_card > .pic{
-        margin-bottom: 10px;
+        margin-bottom: 3px;
         height: 300px;
     }
 
@@ -772,12 +772,14 @@ footer{
 
     /* ----------footer--------- */
     footer{
-        /* padding-top: 200px; */
-        background-position: -200px -800px;
+        padding-top: 400px;
+        background-position: -200px -750px;
         background-size: 230% 230%;
     }
 
     .footer_logo{
-        top: 330px;
+        width: 130px;
+        height: 130px;
+        top: 240px;
     }
 }

@@ -325,7 +325,7 @@ textarea:focus-visible{
 
     .papper{
         background-position: -70% -400px, -50% 90%, 210% 250%;
-        background-size: 80% 80%, 55% 70%, 80% 80%;
+        background-size: 100% 100%, 55% 70%, 80% 80%;
     }
 }
 
@@ -413,7 +413,7 @@ textarea:focus-visible{
     /* ---------papper--------- */
     .papper{
         background-position: -90% -1200px, -50% 130%, 210% 250%;
-        background-size: 100% 100%, 55% 70%, 80% 80%;
+        background-size: 100% 100%, 55% 70%, 80% 77%;
     }
 
     .papper_link{
