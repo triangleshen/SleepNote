@@ -334,7 +334,10 @@ textarea:focus-visible{
     /* -----------banner----------- */
 
     main{
-        margin-bottom: 180px;
+        padding-bottom: 150px;
+        background-image: url(../pic/nav_bg.svg), url(../pic/section_bg_left.svg);
+        background-position: 150px -150px, -180px 100%;
+        background-size: 80% 80%, contain;
     }
 
 
@@ -347,7 +350,7 @@ textarea:focus-visible{
     }
 
     .banner_card{
-        top: 250px;
+        top: 310px;
         left:0;
         right: 0;
         margin: auto;
