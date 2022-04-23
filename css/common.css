@@ -602,6 +602,7 @@ footer{
 
     .banner_tags ul li{
         padding: 8px;
+        font-size: 10px;
     }
 
     #toTop{
@@ -694,7 +695,13 @@ footer{
     }
 
     .main_nav ul{
-        padding: 150px 0px;
+        display: block;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -727,7 +734,7 @@ footer{
     #menu-switch:checked ~ .fix > .hambergur span:first-child{
         top:18.5px;
         transform: rotate(45deg);
-        transition:top .3s, transform .7s 0.3s;
+        transition:top .2s, transform .3s .2s;
     }
 
     #menu-switch:checked ~ .fix > .hambergur span:nth-child(2){
@@ -738,12 +745,13 @@ footer{
     #menu-switch:checked ~ .fix > .hambergur span:last-child{
         bottom:18.5px;
         transform: rotate(-45deg);
-        transition:bottom .3s, transform .7s .3s;
+        transition:bottom .2s, transform .3s .2s;
     }
 
     /* ---------grid---------- */
 
     .grid_card{
+        width: 80%;
         margin-bottom: 20px;
         display: flex;
         align-items: center;

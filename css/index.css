@@ -26,6 +26,7 @@
     border: 7px solid #73A1F1;
     border-radius: 20px;
     box-shadow: 20px 30px 0px #D9E7FF;
+    z-index: 1;
 }
 
 .banner h2{
@@ -334,15 +335,13 @@ textarea:focus-visible{
     /* -----------banner----------- */
 
     main{
-        width: 100%;
-        background-image: url(../pic/nav_bg.svg), url(../pic/section_bg_left.svg);
-        background-repeat: no-repeat;
-        background-position: 100% 0%, -300px  100%;
+        margin-bottom: 50px;
     }
 
 
     .banner .pic{
         width: 100%;
+        top: 50px;
     }
 
     .banner .pic img{
@@ -350,20 +349,24 @@ textarea:focus-visible{
     }
 
     .banner_card{
-        position: relative;
-        top:-50px;
+        top:0px;
         left:0;
         right: 0;
         margin: auto;
-        width: 95%;
+        width: 80%;
         padding: 20px 40px;
         border: 4px solid #73A1F1;
         box-shadow: 7px 10px 0px #D9E7FF;
     }
 
     .banner h2{
-        font-size: 40px;
+        font-size: 36px;
         padding-bottom: 8px;
+        text-align: center;
+    }
+
+    .banner_tags{
+        text-align: center;
     }
 
     .banner_txt{
@@ -372,8 +375,8 @@ textarea:focus-visible{
 
     .banner_info{
         flex-direction: column;
-        align-items: flex-start;
         gap: 5px;
+        text-align: center;
     }
 
     .signUp_link{
@@ -387,7 +390,7 @@ textarea:focus-visible{
 
     /* ----------topic---------- */
     .sub_section .pink_bg{
-        padding-top: 0px;
+        /* padding-top: 0px; */
     }
 
     .topic_card{
