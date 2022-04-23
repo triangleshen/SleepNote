@@ -318,7 +318,7 @@ textarea:focus-visible{
     }
 
     .topic_pic{
-        margin-left: -30px;
+        margin: -15px;
         max-height: 520px;
         overflow: hidden;
     }
@@ -393,6 +393,10 @@ textarea:focus-visible{
         padding-top: 0px;
     }
 
+    .topic_card_wrap{
+        gap: 20px;
+    }
+
     .topic_card{
         width: 90%;
         padding: 30px;
@@ -408,12 +412,14 @@ textarea:focus-visible{
     }
 
     .topic_card > span{  
-        top: -60px;
-        left: -30px;
+        top: -45px;
+        left: -28px;
+        padding:20px 15px;
     }
 
     .topic_card > span::before{
-        left:20px;
+        top:70px;
+        left:15px;
     }
 
     /* ---------papper--------- */
