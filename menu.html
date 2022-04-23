@@ -1,0 +1,45 @@
+<h1>睡眠筆記 SleepNote</h1>
+<div class="header_wrap">
+
+    <input type="checkbox" id="menu-switch">
+
+    <div class="main_logo">
+        <a href="index.html">
+            <img src="pic/logo.svg" alt="logo">
+        </a>
+    </div>
+
+    <div class="fix">
+        <label class="hambergur" for="menu-switch">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+    <nav class="main_nav">
+        <ul>
+            <li>
+                <a href="index.html">首頁</a>
+            </li>
+            <li>
+                <a href="topic.html">睡眠測驗</a>
+            </li>
+            <li>
+                <a href="papper.html">衛教專題</a>
+            </li>
+            <li>
+                <a href="event.html">歷年活動</a>
+            </li>
+            <li>
+                <a href="hostipal.html">相關機構</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<script>
+    $(function(){
+        var pn = $("body").data("pagenum");
+        $("li").eq(pn).addClass("currentPos");
+    });
+</script>
