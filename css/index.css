@@ -334,10 +334,9 @@ textarea:focus-visible{
     /* -----------banner----------- */
 
     main{
-        padding-bottom: 150px;
         background-image: url(../pic/nav_bg.svg), url(../pic/section_bg_left.svg);
-        background-position: 150px -150px, -180px 100%;
-        background-size: 80% 80%, contain;
+        background-position: 150px -150px, -200px 100px;
+        background-size: 80% 80%, 130% 130%;
     }
 
 
@@ -350,7 +349,8 @@ textarea:focus-visible{
     }
 
     .banner_card{
-        top: 310px;
+        position: relative;
+        top: -50px;
         left:0;
         right: 0;
         margin: auto;
@@ -401,26 +401,28 @@ textarea:focus-visible{
     .topic_card{
         width: 90%;
         padding: 30px;
-        padding-top: 40px;
+        padding-top: 50px;
         border: 3px solid #73A1F1;
         box-shadow: 7px 10px 0px #D9E7FF;
     }
 
     .topic_card:first-child,.topic_card:last-child{
-        left: 0;
-        right: 0;
-        margin: auto;
+        left: 20px;
     }
 
     .topic_card > span{  
-        top: -45px;
-        left: -28px;
+        top: -60px;
+        left: -45px;
         padding:20px 15px;
+    }
+
+    .topic_card > span::after{ 
+        left:8px;
     }
 
     .topic_card > span::before{
         top:70px;
-        left:15px;
+        left:13px;
     }
 
     /* ---------papper--------- */
