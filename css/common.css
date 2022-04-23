@@ -616,6 +616,11 @@ footer{
     }
 
     /* ---------header---------- */
+    main{
+        background-position: 0px -80px;
+        background-size:100% 100%;
+    }
+
     .header_wrap{
         height: 50px;
         padding: 8px 10px;

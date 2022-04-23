@@ -335,13 +335,13 @@ textarea:focus-visible{
     /* -----------banner----------- */
 
     main{
-        margin-bottom: 50px;
+        margin-bottom: 200px;
     }
 
 
     .banner .pic{
         width: 100%;
-        top: 50px;
+        top: 200px;
     }
 
     .banner .pic img{
