@@ -563,7 +563,7 @@ footer{
         position: relative;
         left: calc(50% - 78px);
         margin-left: 0;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         font-size: 25px;
     }
 
@@ -709,7 +709,7 @@ footer{
     }
 
     .main_nav ul li{
-        width: 200px;
+        width: 150px;
         text-align: center;
         font-size: 26px;
     }
@@ -768,7 +768,7 @@ footer{
     footer{
         padding-top: 0;
         padding-top: 440px;
-        background-position: -290px -950px;
+        background-position: -290px -1000px;
         background-size: 250% 250%;
     }
 

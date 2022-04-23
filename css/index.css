@@ -392,16 +392,18 @@ textarea:focus-visible{
     /* ----------topic---------- */
     .pink_bg .content_wrap{
         padding-top: 0px;
+        margin-bottom: 20px;
     }
 
     .topic_card_wrap{
+        padding-top: 20px;
         gap: 20px;
     }
 
     .topic_card{
         width: 90%;
         padding: 30px;
-        padding-top: 50px;
+        padding-top: 45px;
         border: 3px solid #73A1F1;
         box-shadow: 7px 10px 0px #D9E7FF;
     }
@@ -411,7 +413,7 @@ textarea:focus-visible{
     }
 
     .topic_card > span{  
-        top: -60px;
+        top: -45px;
         left: -45px;
         padding:20px 15px;
     }
@@ -427,8 +429,8 @@ textarea:focus-visible{
 
     /* ---------papper--------- */
     .papper{
-        background-position: -90% -1200px, -50% 130%, 210% 250%;
-        background-size: 100% 100%, 55% 70%, 80% 77%;
+        background-position: 0px 0px, -100px 81%, 150px 100%;
+        background-size: contain, contain, contain;
     }
 
     .papper_link{
