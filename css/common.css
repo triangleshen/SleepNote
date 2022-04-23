@@ -768,7 +768,7 @@ footer{
     footer{
         padding-top: 0;
         padding-top: 440px;
-        background-position: -200px -950px;
+        background-position: -290px -950px;
         background-size: 250% 250%;
     }
 
@@ -777,4 +777,13 @@ footer{
         height: 130px;
         top: 240px;
     }
+
+    .footer_card{
+        margin-bottom: 20px;
+    }
+
+    .footer_info h2{
+        margin-bottom: 15px;
+    }
+
 }
