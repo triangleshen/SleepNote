@@ -173,7 +173,8 @@ main{
     width: 100%;
     background-image: url(../pic/nav_bg.svg);
     background-repeat: no-repeat;
-    background-position: 100% 0%;
+    background-position: 100px 0px;
+    background-size: contain;
 }
 
 header{
@@ -266,7 +267,6 @@ footer{
     margin-bottom: 20px;
 }
 
-
 .footer_card{
     display: flex;
     flex-direction: column;
@@ -296,16 +296,17 @@ footer{
     filter: brightness(105%);
 }
 
-.copyRight p{
-    font-size: 10px;
-    margin-bottom: 10px;
+.copyRight:first-child{
+    width: 100%;
+    border-top: 1px solid #002E86;
 }
 
-.copyRight:first-child p{
+.copyRight p{
+    margin-bottom: 10px;
     padding-top: 10px;
     text-align: center;
-    font-size: 15px;
-    border-top: 1px solid #002E86;
+    font-size: 12px;
+    line-height: 20px;
 }
 
 /* ----------grid---------- */
@@ -610,10 +611,6 @@ footer{
     }
 
     /* ---------header---------- */
-    main{
-        background-position: 0px -80px;
-        background-size:100% 100%;
-    }
 
     .header_wrap{
         height: 50px;

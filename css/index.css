@@ -409,12 +409,12 @@ textarea:focus-visible{
     }
 
     .topic_card:first-child,.topic_card:last-child{
-        left: 20px;
+        left: 10px;
     }
 
     .topic_card > span{  
         top: -45px;
-        left: -45px;
+        left: -35px;
         padding:20px 15px;
     }
 
@@ -434,10 +434,9 @@ textarea:focus-visible{
     }
 
     .papper_link{
-        margin-right: auto;
-        margin-left:auto;
-        margin-bottom: 50px;
+        margin: 10px auto 50px auto;
     }
+
     form{
         margin-left: 0px;
         width: 100%;
@@ -445,7 +444,6 @@ textarea:focus-visible{
         box-sizing: border-box;
     }
 
-    
     .title+p{
         margin-left: 50px;
     }

@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="css/topic.css">
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/topic.js"></script>
     <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body  data-pagenum="1">
 
-    <main>
+    <main id="top">
 
         <header></header>
 
@@ -25,15 +26,13 @@
                 <h2>認識睡眠、理解睡眠</h2>
                 <div class="banner_txt">
                     <p>
-                        你最近睡得好嗎？怎麼樣才叫睡得好呢？<br>
-                        往下進行幾個簡單的檢測，了解自己的睡眠狀況，<br>
-                        或者點選下方連結，測試看看自己有沒有對睡眠的迷思吧！
+                        往下進行幾個簡單的檢測，了解自己的睡眠狀況，點選下方連結，尋找適合自己的測驗吧！
                     </p>
                 </div>
                 <div class="banner_info">
-                    <a href="jacascript:">
-                        <div class="banner_link btn">
-                            進行迷思測驗！
+                    <a href="#EP">
+                        <div class="banner_link">
+                            查看測驗類型
                         </div>
                     </a>
                 </div>
@@ -47,10 +46,10 @@
         </aside>
     </main>
     
-    <section class="sub_section pink_bg">
+    <section class="sub_section pink_bg" id="EP">
         <div class="content_wrap">
             <div class="row">
-                <div class="test_bubble col-xl-6">
+                <div class="test_bubble col-md-12 col-lg-6 col-xl-6">
                     <div class="topic_card">
                         <div class="topic_card_content">
                             <h2>你有<span>嗜睡</span>的傾向嗎？</h2>
@@ -68,9 +67,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class= "col-md-12 col-lg-4 col-xl-4">
                     <div class="topic_img">
-                        <img src="pic/topic2.jpg" alt="嗜睡測驗">
+                        <img src="pic/topic2.jpg" alt="嗜睡測驗" id="EPpic">
                     </div>
                 </div>
             </div>
@@ -80,7 +79,7 @@
     <section class="sub_section pink_bg">
         <div class="content_wrap">
             <div class="row">
-                <div class="test_bubble col-xl-6">
+                <div class="test_bubble col-md-12 col-lg-6 col-xl-6">
                     <div class="topic_card">
                         <div class="topic_card_content">
                             <h2>你有<span>打呼</span>的困擾嗎？</h2>
@@ -96,9 +95,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-12 col-lg-4 col-xl-4">
                     <div class="topic_img">
-                        <img src="pic/topic3.jpg" alt="STOP-BANG">
+                        <img src="pic/topic3.jpg" alt="STOP-BANG" id="SBpic">
                     </div>
                 </div>
             </div>
@@ -106,9 +105,10 @@
     </section>
 
     <section class="sub_section pink_bg">
+
         <div class="content_wrap">
             <div class="row">
-                <div class="test_bubble col-xl-6">
+                <div class="test_bubble col-md-12 col-lg-6 col-xl-6">
                     <div class="topic_card">
                         <div class="topic_card_content">
                             <h2>其他相關的表單</h2>
@@ -132,9 +132,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-md-12 col-lg-4 col-xl-4">
                     <div class="topic_img">
-                        <img src="pic/topic4.jpg" alt="嗜睡測驗">
+                        <img src="pic/topic4.jpg" alt="嗜睡測驗" id="OTHERpic">
                     </div>
                 </div>
             </div>
@@ -144,13 +144,18 @@
 
 
     <section class="question">
+        <div class="content_wrap">
+            <div class="title">
+                <h2>其他問題</h2>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-xl-5">
+            <div class="col-md-12 col-lg-5 col-xl-5">
                 <div class="q_pic">
-                    <img src="pic/topic_q.jpg" alt="question">
+                    <img src="pic/topic_q.jpg" alt="question" id="Qpic">
                 </div>
             </div>
-            <div class="q_card_wrap col-xl-7">
+            <div class="q_card_wrap col-md-12 col-lg-7 col-xl-7">
                 <div class="q_card">
                     <span>還想了解更多！</span>
                     <div class="q_card_content">
