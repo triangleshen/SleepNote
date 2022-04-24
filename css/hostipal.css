@@ -3,6 +3,15 @@ input{
 }
 
 /* ----------map---------- */
+.grid_row{
+    justify-content: center;
+}
+
+.col-xl-6{
+    flex-grow: 1;
+    padding-bottom: 5px;
+}
+
 .list_row{
     display: flex;
     flex-direction: column;
