@@ -23,6 +23,8 @@ function init(){
             toTop.classList.add('hidden');
         }
     })
+
+    AOS.init();
 }
 
 window.addEventListener("load",init,false);

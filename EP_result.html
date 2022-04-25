@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>測驗結果 - 睡眠筆記 SleepNote</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/test.css">
-    <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
     <script  type="text/javascript" src="js/test_result.js"></script>
     <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
@@ -36,8 +38,8 @@
                     <div class="pic">
                         <img src=" " id="diagram" alt="diagram">
                     </div>
-                    <div class="result_card">
-                        <h2>你的嗜睡分數為<span id="grade">0</span>分</h2>
+                    <div class="result_card" data-aos="fade-up" data-aos-duration="1500">
+                        <h2>你的嗜睡分數為<span id="grade"></span>分</h2>
                         <h3 id="result">嗜睡情況正常偏少</h3>
                         <div class="result_txt">
                             <p id="advice">
@@ -65,7 +67,7 @@
     <section class="sub_section">
         <div class="content_wrap">
             <div class="more_wrap">
-                <div class="q_card">
+                <div class="q_card" data-aos="fade-left" data-aos-duration="1500">
                     <span>還想了解更多！</span>
                     <div class="q_card_content">
                         <p>
@@ -78,7 +80,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="q_card">
+                <div class="q_card" data-aos="fade-left" data-aos-duration="1500">
                     <span>若有睡眠障礙，<br>該去哪裡求診呢？</span>
                     <div class="q_card_content">
                         <p>
@@ -95,7 +97,7 @@
         </div>
     </section>
 
-    <footer></footer>
+    <footer data-aos="fade-up" data-aos-duration="1000"></footer>
 
 </body>
 </html>

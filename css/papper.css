@@ -208,15 +208,13 @@ input{
 
 @media screen and (min-width:768px){
     .banner_card:hover{
-        bottom:0.8%;
+        bottom: 1%;
         right:5.1%;
         cursor: pointer;
-        box-shadow: 23px 15px 0px #D9E7FF;
+        box-shadow: 18px 23px 0px #D9E7FF;
     }
 
     .banner_card:hover{
-        bottom: 1%;
-        right:5.1%;
     }
 }
 
