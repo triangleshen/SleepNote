@@ -1,3 +1,7 @@
+main{
+    background-position: 250px 0px;
+}
+
 .content_wrap{
     padding-top: 80px;
 }
@@ -211,7 +215,7 @@ input{
     }
 
     .banner_card:hover{
-        bottom: -9.2%;
+        bottom: 1%;
         right:5.1%;
     }
 }
@@ -275,10 +279,10 @@ input{
         transform: scale(1.05);
     }
 
-    .banner_card > .bookMark{
+    /* .banner_card > .bookMark{
         top: -119%;
         z-index: 4;
-    }
+    } */
 
     .banner_card{
         position: relative;
