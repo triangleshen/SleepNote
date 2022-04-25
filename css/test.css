@@ -3,7 +3,7 @@ h2,.intro{
 }
 
 .content_wrap h2{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     font-size: 36px;
 }
 
@@ -12,15 +12,16 @@ h2,.intro{
 }
 
 .intro_row{
-    max-width: 900px;
     margin: auto;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 40px;
 }
 
 .intro{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 }
 
@@ -29,9 +30,10 @@ h2,.intro{
     margin: auto;
 }
 
-.intro > span{
-    padding-top: 24px;
-    padding-bottom: 10px;
+.intro_text > span{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
     font-size: 20px;
     color: #002E86;
     font-weight: bold;
@@ -92,7 +94,7 @@ h3 + p{
     display: none;
 }
 
-label{
+.question label{
     padding: 8px 10px;
     border-radius: 10px;
     background-color: #f1f1f1;
@@ -100,25 +102,25 @@ label{
     transition: 0.2s;
 }
 
-label:hover{
+.question label:hover{
     cursor: pointer;
     color: #002E86;
 }
 
-label:hover.add0,[id*="add0"]:checked + .add0{
+.question label:hover.add0,[id*="add0"]:checked + .add0{
     background-color: #DAE8FF;
 }
-label:hover.add1,[id*="add1"]:checked + .add1{
+.question label:hover.add1,[id*="add1"]:checked + .add1{
     background-color: #d0daff;
 }
-label:hover.add2,[id*="add2"]:checked + .add2{
+.question label:hover.add2,[id*="add2"]:checked + .add2{
     background-color: #DED2FF;
 }
-label:hover.add3,[id*="add3"]:checked + .add3{
+.question label:hover.add3,[id*="add3"]:checked + .add3{
     background-color: #fed1ff;
 }
 
-input.btn{
+input.sub{
     display: block;
     margin: 40px auto;
     padding: 10px 20px;
@@ -140,20 +142,13 @@ input.btn{
 }
 
 .pic{
-    max-width: 300px;
     position: relative;
     top: -80px;
     left: 80px;
-    z-index: 1;
-}
-
-.pic img{
-    border-radius: 50%;
 }
 
 .result_card{
-    max-width: 800px;
-    padding: 30px 100px;
+    padding: 40px 100px;
     box-sizing: border-box;
     position: relative;
     top: 70px;
@@ -161,13 +156,14 @@ input.btn{
     background-color: #fff;
     border: 5px solid #73A1F1;
     border-radius: 20px;
-    box-shadow: 30px 20px 0px #D9E7FF;
+    box-shadow: 10px 17px 0px #D9E7FF;
     text-align-last: left;
 }
 
 .result_card h2{
     font-size: 30px;
     margin-bottom: 0px;
+    padding-bottom: 10px;
 }
 
 .result_card h3{
@@ -199,11 +195,18 @@ input.btn{
     align-items: center;
 }
 
-.content_wrap h2{
+.further [class*="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    flex-grow: 1;
+}
+
+.further h2{
     padding-top: 15px;
     margin-bottom: 0px;
     vertical-align: bottom;
-    font-size: 26px;
+    font-size: 24px;
 }
 
 .further p{
@@ -240,7 +243,7 @@ input.btn{
     width: 150px;
     height: 114px;
     position: absolute;
-    top: 210px;
+    top: 100%;
     right: -60px;
     background-image: url(../pic/topic_br.svg);
     background-repeat: no-repeat;
@@ -320,4 +323,143 @@ input.btn{
 .q_link{
     padding: 10px 15px;
     font-size: 18px;
+}
+
+/* ----------桌機用的---------- */
+@media screen and (min-width:768px){
+    .intro_row{
+        max-width: 900px;
+    }
+
+    /* ----------result--------- */
+    .pic{
+        max-width: 300px;
+        z-index: 1;
+    }
+
+    .pic img{
+        border-radius: 50%;
+    }
+
+    .result_card{
+        max-width: 800px;
+    }
+}
+
+/* ----------手機用---------- */
+@media screen and (max-width:768px){
+    .content_wrap h2{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .intro_row{
+        width: 80%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .intro{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .intro_pic{
+        width: 20%;
+    }
+
+    .intro_text{
+        flex-grow: 1;
+    }
+
+    .intro p{
+        font-weight: bold;
+        line-height: 20px;
+        font-size: 14px;
+    }
+
+    .content_wrap h3{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h3 + p{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .question{
+        padding: 30px 10px;
+    }
+
+    .ans{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 5px;
+        font-size: 18px;
+    }
+
+    input.sub{
+        padding: 7px 15px;
+        font-size: 16px;
+    }
+
+    /* ----------result---------- */
+    .result_wrap{
+        padding: 0px 0px;
+        padding-bottom: -50px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .pic{
+        width: 100%;
+        max-height: 380px;
+        overflow: hidden;
+        top: 0px;
+        left: 0px;
+    }
+
+    .result_card{
+        width: 90%;
+        padding: 20px 30px 30px 30px;
+        top: -100px;
+        left: 0px;
+        border: 3px solid #73A1F1;
+        box-shadow: 5px 12px 0px #D9E7FF;
+    }
+
+    .further h2 {
+        font-size: 24px;
+    }
+
+    .result_card h3{
+        margin-bottom: 15px;
+        padding: 0px;
+        font-size: 20px;
+    }
+
+    .result_txt p{
+        font-size: 16px;
+    }
+
+    .more_wrap{
+        flex-direction: column;
+    }
+
+    .q_card{
+        width: 80%;
+    }
+
+    .q_card > span{
+        top: -20%;
+        left: -10%;
+    }
+
+    .q_card:last-child > span{
+        left: -8%;
+    }
 }

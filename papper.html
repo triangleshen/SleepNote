@@ -9,25 +9,41 @@
     <link rel="stylesheet" href="css/papper.css">
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/papper.js"></script>
     <link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body  data-pagenum="2">
     
-    <main>
+    <main id="top">
         <header></header>
 
+        <aside id="toTop">
+            <a href="#top">
+                <img src="pic/toTop.svg" alt="to top">
+            </a>
+        </aside>
+
         <section class="content_wrap">
+            <div class="breadCrumbs">
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><span>衛教專題</span></li>
+                </ul>
+            </div>
             <div class="title">
                 <h2>衛教專題</h2>
             </div>
             <div class="banner">
                 <div class="pic">
                     <a href="nightOwl.html">
-                        <img src="pic/papper_banner.jpg" alt="banner">
+                        <img src="pic/papper_banner.jpg" alt="banner" id="banPic">
                     </a>
                 </div>
                 <a href="nightOwl.html">
                     <div class="banner_card">
+                        <div class="bookMark">
+                            <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                        </div>
                         <h3>有天生的夜貓子嗎？</h3>
                         <div class="banner_tags tags">
                             <ul>
@@ -48,72 +64,121 @@
                 </a>
             </div>
         </section>
-        <aside id="toTop">
-            <a href="#top">
-                <img src="pic/toTop.svg" alt="to top">
-            </a>
-        </aside>
     </main>
 
-    
     <section class="sub_section">
         <div class="content_wrap">
+            <input type="checkbox" id="list-switch">
+            <div class="tag_title">
+                <label for="list-switch">
+                    <div class="switch">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    標籤篩選
+                </label>
+            </div>
             <div class="list_wrap">
                 <div class="row">
-                    <div class="col-xl-2">
+                    <div class="col-4 col-md-2 col-lg-2 col-xl-2">
                         <div class="title">
                             <h2>專題標籤</h2>
                         </div>
                     </div>
-                    <div class="col-xl-10">
+                    <div class="col-8 col-md-10 col-lg-10 col-xl-10">
                         <div class="tags">
                             <ul>
-                                <li><span>睡眠新知</span>
+                                <input type="radio" name="tags" id="all" checked>
+                                <li>
+                                    <label for="all">
+                                        <span>全選</span>
+                                    </label>
                                 </li>
-                                <li><span>睡眠迷思</span></li>
-                                <li><span>睡眠障礙</span></li>
-                                <li><span>失眠</span></li>
-                                <li><span>打呼</span></li>
-                                <li><span>安眠藥</span></li>
-                                <li><span>咖啡因</span></li>
-                                <li><span>夢境</span></li>
-                                <li><span>就診</span></li>
-                                <li><span>老年人</span></li>
-                                <li><span>年輕人</span></li>
+                                <input type="radio" name="tags" id="myth">
+                                <li>
+                                    <label for="myth">
+                                        <span>睡眠迷思</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="snore">
+                                <li>
+                                    <label for="snore">
+                                        <span>打呼</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="SP">
+                                <li>
+                                    <label for="SP">
+                                        <span>安眠藥</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="coffee">
+                                <li>
+                                    <label for="coffee">
+                                        <span>咖啡因</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="dream">
+                                <li>
+                                    <label for="dream">
+                                        <span>夢境</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="elder">
+                                <li>
+                                    <label for="elder">
+                                        <span>老年人</span>
+                                    </label>
+                                </li>
+                                <input type="radio" name="tags" id="teens">
+                                <li>
+                                    <label for="teens">
+                                        <span>年輕人</span>
+                                    </label>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xl-2">
+                <!-- <div class="row">
+                    <div class="col-4 col-md-2 col-lg-2 col-xl-2">
                         <div class="title">
                             <h2>時間順續</h2>
                         </div>
                     </div>
-                    <div class="col-xl-10">
+                    <div class="col-8 col-md-10 col-lg-10 col-xl-10">
                         <div class="tags">
                             <ul>
+                                <input type="radio" name="time" id="NtO" checked>
                                 <li>
-                                    <span>從舊到新</span>
+                                    <label for="NtO">
+                                        <span>從新到舊</span>
+                                    </label>
                                 </li>
+                                <input type="radio" name="time" id="OtN">
                                 <li>
-                                    <span>從新到舊</span>
+                                    <label for="OtN">
+                                        <span>從舊到新</span>
+                                    </label>
                                 </li>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="title">
                 <h2>專題列表</h2>
             </div>
-            <div class="grid_row">
-                <div class="col-xl-4">
-                    <a href="#">
+            <div class="grid_row" id="papper_row">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper2.jpg" alt="假日補眠">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>假日補眠有幫助嗎？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -125,17 +190,34 @@
                                         對於長期缺乏睡眠的人來說，補眠可以讓身體獲得短暫的睡眠補償。但是，補眠無法彌補所有損失。例如，非快速動眼睡眠原本要鞏固記憶的功能，當天損失之後的記憶就永遠失去了，怎麼補也回不來。快速動眼睡眠用於整合的新資訊與記憶，如果當天沒有即時處理，日後一樣無法彌補。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
                     <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper3.jpg" alt="青少年">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>為什麼青少年總是晚睡？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -148,17 +230,34 @@
                                         青少年的晚睡晚起習慣不是因為懶惰，人類在青春期的發育目標是學習「獨立」，在同儕團體與複雜關係中找到自己的路。自然的演化，讓青少年的睡眠節律往後延，刻意跟父母錯開。此時父母在夜間10點就想睡，但青少年卻還滿腦清醒。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4">
-                    <a href="#">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper4.jpg" alt="老人睡眠">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>老人總是睡得比較少？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -171,17 +270,34 @@
                                         老年人只需要比較少的睡眠是錯的，隨著年紀增長，睡眠有三個改變：（１）質與量降低；（２）效率降低；（３）時機受干擾。首先，許多與老化有關的健康問題，與睡眠質量有強烈相關。睡得少不太表不需要睡，反而要想辦法改善睡眠。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4">
-                    <a href="#">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper5.jpg" alt="安眠藥">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>安眠藥可以解決睡眠問題嗎？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -194,17 +310,34 @@
                                         安眠藥無法提供自然的睡眠。它的效用是鎮靜劑，效用是把腦部較高階的皮質區擊昏。也就是，雖然你看似入睡了，但是非快速動眼睡眠與快速動眼睡眠兩者都受到干擾，長期下來會持續影響記憶能力與學習創造的能力。服用安眠藥也會帶來健康、車禍、壽命等不良的影響。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4">
-                    <a href="#">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper6.jpg" alt="咖啡">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>咖啡該怎麼喝？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -217,17 +350,34 @@
                                         咖啡因是一種興奮劑，在咖啡、可樂、某些茶類、巧克力中都有，效果需要八小時才會退去，在下午三點後避免攝取。尼古丁也是一種興奮劑，會使吸菸的人睡眠很淺。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-xl-4">
-                    <a href="#">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
                         <div class="grid_card">
-                            <div class="card_content">
-                                <div class="pic">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
                                     <img src="pic/papper7.jpg" alt="上學時間">
-                                </div>
+                            </div>
+                            <div class="card_content">
                                 <h3>目前孩童的上學時間合理嗎？</h3>
                                 <div class="grid_tags tags">
                                     <ul>
@@ -240,18 +390,110 @@
                                         據研究指出，兒童睡得越久智力越高，IQ較高的兒童總是比IQ較低的兒童多睡了四十到五十分鐘。有更多的研究證據支持，「延後」學童的上課時間，例如從七點半延後至八點半，對於成績與學習表現有顯著提升。疲憊、睡眠不足的腦，就像充滿孔洞的記憶濾篩，無法接收、吸收、保存學習內容。
                                     </p>
                                 </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
+                        <div class="grid_card">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
+                                    <img src="pic/papper9.jpg" alt="打呼">
+                            </div>
+                            <div class="card_content">
+                                <h3>打呼及睡眠呼吸中止症候群</h3>
+                                <div class="grid_tags tags">
+                                    <ul>
+                                        <li><span>打呼</span></li>
+                                    </ul>
+                                </div>
+                                <div class="grid_txt">
+                                    <p>
+                                        打呼是一種常見的睡眠異常現象，大多數人並不以為意，甚至把它視為正常，但打呼事實上是一種身體異常的警訊：它可以造成夫婦反目、朋友失和工作效率減底，失去工作、工作疲倦、車禍、脾氣不好…….。等等因睡眠不足而造成的後遺症，但這只是一部份的結果而已，如果這進一步的惡化，更會引發睡眠呼吸中止症候群，造成健康上的問題。
+                                    </p>
+                                </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 cards">
+                    <a href="javascript:">
+                        <div class="grid_card">
+                            <div class="bookMark">
+                                <img src="pic/tag.svg" alt="bookMark" title="加入書籤">
+                            </div>
+                            <div class="pic">
+                                    <img src="pic/papper8.jpg" alt="作夢">
+                            </div>
+                            <div class="card_content">
+                                <h3>為什麼會作夢？</h3>
+                                <div class="grid_tags tags">
+                                    <ul>
+                                        <li><span>作夢</span></li>
+                                    </ul>
+                                </div>
+                                <div class="grid_txt">
+                                    <p>
+                                        人們整晚睡眠當中，是呈現速眼動與非速眼動睡眠交替循環出現的（如圖2），每次循環約為90～120分鐘，每晚大約有4～5次的循環，亦就是會有4～5次的速眼動睡眠階段。研究發現，若把人從速眼動睡眠中喚醒，有80～90％的機率會表示有做夢，由此可知速眼動睡眠與夢的發生有極大關聯。
+                                    </p>
+                                </div>
+                                <div class="grid_info">
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/fav.svg" alt="like">
+                                        </div>
+                                        <p>12</p>
+                                    </div>
+                                    <div class="grid_icon">
+                                        <div class="icon">
+                                            <img src="pic/view.svg" alt="view">
+                                        </div>
+                                        <p>120</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
 
-            <div class="grid_pages">
+            <!-- <div class="grid_pages">
                 <div class="page">1</div>
                 <div class="page">2</div>
                 <div class="page">3</div>
                 <div class="page">...</div>
-            </div>
+            </div> -->
         </div>
     </section>
     

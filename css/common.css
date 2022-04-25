@@ -127,8 +127,9 @@ img{
     background-color: #ff4de4;
 }
 
-.breadCrumbs{
-    margin-bottom: 30px;
+.breadCrumbs {
+    margin-bottom: 10px;
+    margin-left: 30px;
 }
 
 .breadCrumbs ul li{
