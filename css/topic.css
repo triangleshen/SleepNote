@@ -538,11 +538,11 @@
     }
 
     .q_card:last-child > span::after{
-        top:80px;
+        top:82px;
     }
 
     .q_card:last-child > span::before{
-        top:85px;
+        top:87px;
     }
 
     .q_card p{
