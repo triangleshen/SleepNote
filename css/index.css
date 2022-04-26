@@ -227,7 +227,7 @@ form{
     width: 500px;
 }
 
-label{
+form label{
     display: inline-block;
     padding-bottom: 5px;
     margin-right: 10px;
@@ -451,4 +451,9 @@ textarea:focus-visible{
     textarea{
         height: 100px;
     }
+    
+    /* ---------demo bug---------- */
+    /* .fix{
+        right: 60px;
+    } */
 }

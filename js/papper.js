@@ -3,6 +3,9 @@ window.addEventListener( "load" , function (){
     if(screenWidth <= 768){
         $id('banPic').src= 'pic/article_banner.jpg';
     }
+    if(screenWidth > 768){
+        $id('banPic').src= 'pic/papper_banner.jpg';
+    }
 
     // $('.tag_title').click(function(){
     //     $('.list_wrap').slideToggle(2000,'easeInOutBack');
