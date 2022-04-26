@@ -14,15 +14,15 @@ $(document).ready(function(){
 
 // ----------toTop動畫---------- //
 function init(){
-    window.addEventListener('scroll',function(){
-        let toTop = document.getElementById('toTop');
+    // window.addEventListener('scroll',function(){
+    //     let goTOP = document.getElementById('toTop');
         
-        if(document.documentElement.scrollTop >= 300){
-            toTop.classList.remove('hidden');
-        }else{
-            toTop.classList.add('hidden');
-        }
-    })
+    //     if(document.documentElement.scrollTop >= 300){
+    //         goTOP.classList.remove('hidden');
+    //     }else{
+    //         goTOP.classList.add('hidden');
+    //     }
+    // })
 
     AOS.init();
 }

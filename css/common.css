@@ -161,12 +161,17 @@ img{
     bottom: 20px;
     right: 30px;
     z-index: 3;
-    transition: 0.3s;
+    filter: brightness(1);
+    transition:bottom .3s, filter .2s;
 }
 
 #toTop.hidden{
     bottom: -100px;
     transition: 0.3s;
+}
+
+#toTop:hover{
+    filter: brightness(1.05);
 }
 
 /* ----------header---------- */

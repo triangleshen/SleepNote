@@ -4,7 +4,6 @@
 
 .title{
     margin:0px auto 30px;
-    
 }
 
 .breadCrumbs {
@@ -21,7 +20,7 @@
 
 
 .banner_card{
-    width: 35%;
+    width: 40%;
     position: absolute;
     bottom:8%;
     right:0%;
@@ -90,7 +89,7 @@ article p{
 }
 
 /* ----------ref---------- */
-.title{
+.pink_bg .title{
     margin-top: 20px;
     margin-bottom: 0px;
 }
@@ -161,7 +160,7 @@ article p{
     gap: 15px;
 }
 
-.grid_card::after{
+/* .grid_card::after{
     content: ' ';
     width: 150px;
     height: 114px;
@@ -170,8 +169,8 @@ article p{
     right: 10px;
     background-image: url(../pic/topic_br.svg);
     background-repeat: no-repeat;
-    background-size:100% 70%;
-}
+    background-size:100% 70%; */
+/* } */
 
 .grid_card > .pic{
     width: 33.333333%;
@@ -189,4 +188,62 @@ article p{
 
 .grid_tags{
     padding-bottom: 13px;
+}
+
+/* ----------RWD---------- */
+/* -----------大平板----------- */
+@media screen and (max-width:996px){
+    .banner_card{
+        width: 50%;
+    }
+
+    .content_wrap{
+        padding-left:6px;
+        padding-right:6px;
+    }
+}
+
+/* -----------手機----------- */
+@media screen and (max-width:768px){
+    .banner_card{
+        width: 50%;
+    }
+
+    
+    .title_card{
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 3px solid #73A1F1;
+        border-right: 0px solid transparent;
+        border-radius: 15px 0px 0px 15px;
+        box-shadow: 10px 5px 0px #D9E7FF;
+    }
+
+    .title_card h2{
+        font-size: 25px;
+    }
+
+    .banner_tags{
+        margin: auto 10px;
+    }
+
+    .banner_tags ul li{
+        margin: 0px 5px;
+        padding: auto 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .txt_info{
+        font-size: 16px;
+    }
+
+    .grid_card{
+        margin: auto;margin-bottom: 30px;
+    }
+
+    footer{
+        padding-top: 500px;
+    }
 }
