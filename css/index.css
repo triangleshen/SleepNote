@@ -451,9 +451,4 @@ textarea:focus-visible{
     textarea{
         height: 100px;
     }
-    
-    /* ---------demo bug---------- */
-    /* .fix{
-        right: 60px;
-    } */
 }
