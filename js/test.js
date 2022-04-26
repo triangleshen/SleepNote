@@ -122,9 +122,6 @@ function checkForm(){
         return;
     }
 
-    
-    var ans = window.location.search.split('=')[1];
-    
     location.href=`EP_result.html?ans=${result}`;
     // location.href='EP_result.html?ans=' + result;
 
